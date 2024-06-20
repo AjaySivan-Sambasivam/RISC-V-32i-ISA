@@ -1,0 +1,23 @@
+module rv32_top(mp_dmdata_in,ahb_resp_in,mp_rst_in,ahb_ready_in)
+
+	input mp_rst_in,ahb_ready_in;
+
+
+	wire [31:0] pc_wir,pc_mux_wir;
+
+pc_mux PC(.rst_in(mp_rst_in),
+					.pc_src_in(),
+					.epc_in(),
+					.trap_addr_in(),
+					.branch_addr_in(),
+					.iaddr_in(),
+					.ahb_ready_in(ahb_ready_in),
+					.pc_in(pc_wir),
+					.iaddr_out(),
+					.pc_pluse_4_out(),
+					.mis_instr_log_out,
+					.pc_mux_out(pc_mux_wir));
+
+
+reg_block1 REG1(pc_mux_in,mp_clk_in,mp_rst_in,pc_out);
+

@@ -1,20 +1,3 @@
-/************************************
-
-//File Name: msrv32_machine_control.v
-
-//Module Name: msrv32_machine_control
-
-//Description: 
-
-//Dependencies:
-
-//Version: 1.0
-
-//Engineer: Prasanna
-
-//Email: tech_support@maven-silicon.com
-
-//************************************/
 module msrv32_machine_control( input  clk_in, reset_in,
                                // from control unit
                                input  illegal_instr_in,misaligned_load_in,misaligned_store_in,

@@ -1,31 +1,3 @@
-/*********************************
-
-//File Name: msrv32_csr_file.v
-
-//Module Name: msrv32_csr_file
-
-//Description: Control and status register.
-
-//Dependencies: csr_data_mux_unit.v,
-//		mcause_reg.v,
-//		misa_and_pre_data.v,
-//		mtval_reg.v,
-//		data_wr_mux_unit.v,
-//		mepc_and_mscratch_reg.v,
-//		mtvec_reg.v,
-//		machine_counter_setup.v,
-//		mie_reg.v,
-//		machine_counter.v,
-//		mip_reg.v,
-//		mstatus_reg.v
-
-//Version: 1.0
-
-//Engineer: Nishikant
-
-//Email: tech_support@maven-silicon.com
-
-//************************************/
 
 
 `timescale 1ns / 1ps
